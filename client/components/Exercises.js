@@ -80,14 +80,16 @@ export default class Exercises extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.exercises.map(e =>
-                  <tr key={e.id}>
-                    <td>{e.type}</td>
-                    <td>{e.quantity}</td>
-                    <td>{e.calories}</td>
-                    <td>{e.duration}</td>
-                  </tr>
-                )}
+                {
+                  this.state.exercises.map(e =>
+                    <tr key={e.id}>
+                      <td>{e.type}</td>
+                      <td>{e.quantity}</td>
+                      <td>{e.calories}</td>
+                      <td>{e.duration}</td>
+                    </tr>
+                  )
+                }
               </tbody>
             </table>
 

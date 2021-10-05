@@ -24,6 +24,7 @@ export default class Login extends React.Component {
     })
     .catch(() => {
       // notify user login failed
+      console.log('Failed');
     });
   }
 

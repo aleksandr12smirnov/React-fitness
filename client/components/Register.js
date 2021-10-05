@@ -20,6 +20,7 @@ export default class Register extends React.Component {
     })
     .catch(() => {
       // notify user registration failed
+      console.log('Failed');
     });
   }
 

@@ -73,13 +73,15 @@ export default class Devices extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.devices.map(d =>
-                  <tr key={d.id}>
-                    <td>{d.serial}</td>
-                    <td>{d.product}</td>
-                    <td>{d.category}</td>
-                  </tr>
-                )}
+                {
+                  this.state.devices.map(d =>
+                    <tr key={d.id}>
+                      <td>{d.serial}</td>
+                      <td>{d.product}</td>
+                      <td>{d.category}</td>
+                    </tr>
+                  )
+                }
               </tbody>
             </table>
 
